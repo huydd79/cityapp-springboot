@@ -4,11 +4,14 @@ This is sample of cityapp demo application, converted to use springboot framewor
 ## Prerequisites
 - Maven installed
 - Docker
+- Mysql server with world database
 
 ## How to use
-Clone the repo and run script to build and test
+Clone the repo and change mysql parameters on docker-compose.yml to your lab's info.
+
+Run script to build and test app on docker environment
 - 01.compling-app.sh : Compiling project
 - 02.building-image.sh : Building docker image and start container for testing
-Testing result by using curl: curl http://localhost:8080 or using browser
+Testing result by using curl: curl http://localhost:8080/cityapp/ or using browser
 
 # ---
