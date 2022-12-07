@@ -33,7 +33,7 @@
 #       set MAVEN_OPTS=-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=8000
 #   MAVEN_SKIP_RC - flag to disable loading of mavenrc files
 # ----------------------------------------------------------------------------
-
+MVNW_VERBOSE=true
 if [ -z "$MAVEN_SKIP_RC" ] ; then
 
   if [ -f /usr/local/etc/mavenrc ] ; then
@@ -246,11 +246,11 @@ else
           echo "Found curl ... using curl"
         fi
         if [ -z "$MVNW_USERNAME" ] || [ -z "$MVNW_PASSWORD" ]; then
+        echo "=====================: $wrapperJarPath $jarUrl"
             curl -o "$wrapperJarPath" "$jarUrl" -f
         else
             curl --user $MVNW_USERNAME:$MVNW_PASSWORD -o "$wrapperJarPath" "$jarUrl" -f
         fi
-
     else
         if [ "$MVNW_VERBOSE" = true ]; then
           echo "Falling back to using Java to download"

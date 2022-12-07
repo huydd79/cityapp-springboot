@@ -1,0 +1,13 @@
+version: '3'
+services:
+  app:
+    build: .
+    image: cityapp
+    environment:
+      DB_HOST: 172.16.100.15
+      DB_PORT: 3306
+      DB_NAME: world
+      DB_USER: cityapp
+      DB_PASS: Cyberark1
+    ports:
+      - 8080:8080
