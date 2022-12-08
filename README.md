@@ -12,7 +12,9 @@ Clone the repo and change mysql parameters on docker-compose.yml to your lab's i
 Run script to build and test app on docker environment
 - 01.compling-app.sh : Compiling project
 - 02.building-image.sh : Building docker image and start container for testing
+
 Testing result by using curl: curl http://localhost:8080/cityapp/ or using browser
+
 Checking for environment params: curl http://localhost:8080/cityapp/env
 
 # ---
